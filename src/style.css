@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.expandend-bg {
+    background: url(./assets/home/background-home-mobile.jpg) no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+}
+
+
+.expandend-nav--bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+}
+
+.divider {
+    display: none;
+    width: 55%;
+    height: 2px;
+    margin-right: -45px;
+    padding: 0 1em;
+    background-color: aqua;
+}
+
+.menu  {
+    border: none;
+    background: transparent;
+}
+
+.menu img {
+    width: 30px;
+}
+
+.nav-bar {
+    display: none;
+    position: absolute;
+    top: 15%;
+    left: -100px;
+}
+
+@keyframes loadNav {
+    from {
+        position: absolute;
+        top: 15%;
+        left: -1000px;  
+    }
+
+    to {
+        position: absolute;
+        top: 15%;
+        left: 0px;  
+    }
+}
+
+.nav-bar.active {
+    position: absolute;
+    top: 15%;
+    left: 0;
+
+    animation:  loadNav ease-in 1s;
+    display: flex;
+    flex-direction: column;
+    
+   
+    width: 100%;
+    height: 100%;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 4px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.5px);
+-webkit-backdrop-filter: blur(2.5px);
+border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+/*
+.nav-bar {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    display: flex;
+    align-items: center;
+   
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    border: 1px solid rgba(255, 255, 255, 0.02);
+    }
+    
+*/
+
+
+#start-logo {
+  margin: 0 1em;
+}
+
+
+/*.nav-item:first-child {
+    padding-left: 10%;
+}*/
+
+
+.nav-item:first-child {
+   padding-top: 3em;
+}
+
+.nav-bar .nav-item.active:nth-child(odd) {
+    width: 27%;
+}
+
+.nav-bar .nav-item.active:nth-child(even) {
+    width: 50%;
+}  
+
+.nav-bar .nav-item {
+    margin: 1.3em 1.5em;
+    font-size: clamp(.5em, 1.2em, 1.5em);
+}
+
+.nav-item.active {
+    padding-bottom: 1em;
+    border-bottom: 2px solid white;
+}
+
+
+
+@media (min-width:64em) {
+    .expandend-bg {
+        background: url(./assets/home/background-home-tablet.jpg) no-repeat;
+        background-size: 100% 100%;
+        height: 100vh;
+    }
+
+}
+
+@media (min-width: 90em) {
+    .expandend-bg {
+        background: url(./assets/home/background-home-desktop.jpg) no-repeat;
+    }
+}
+
