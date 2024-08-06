@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-size: 100%;
@@ -47,16 +47,28 @@ body {
 .Home-space .space--title {
     font-size: clamp(1.3em, 1.7em, 2em);
     font-weight: 300;
+    letter-spacing: 4px;
     text-transform: uppercase;
     padding: 0 1em;
     margin-bottom: 1.5em;
 }
+
+.Home-space .sub--space--text {
     
-    .Home-space .sub--space--text {
+    letter-spacing: 4px;
     line-height: 25px;
     opacity: .7;
     padding: 0 1em;
 }
+
+.space--sub--title {
+    margin-top: -5%;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
 
 /*bubble*/
 
@@ -73,6 +85,7 @@ body {
     background-color: #fff;
 }
 
+/*light animation*/
 
 @keyframes light {
     from {
@@ -80,27 +93,31 @@ body {
     }
 
     to {
-        box-shadow: -3px 4px 109px -4px rgba(237,230,230,0.75);
+        box-shadow: -3px 4px 109px -4px rgba(237, 230, 230, 0.75);
     }
 }
 
-.bubble:hover{
+.bubble:hover {
     animation: light ease-in-out 1s;
-    box-shadow: -3px 4px 109px -4px rgba(237,230,230,0.75);
+    box-shadow: -3px 4px 109px -4px rgba(237, 230, 230, 0.75);
 }
 
 .bubble-title {
+    font-weight: 300;
+    letter-spacing: 5px;
     text-transform: uppercase;
-    font-size: clamp(1em, 1.2em , 1.5em);
+    font-size: clamp(1em, 1.2em, 1.5em);
     color: #000;
     opacity: .7;
 }
 
-#Destination{
+#Destination {
     background: url(./assets/destination/background-destination-mobile.jpg) no-repeat;
     background-size: 100% 100%;
     height: 100vh;
 }
+
+/*nav*/
 
 .expandend-nav--bar {
     display: flex;
@@ -125,7 +142,7 @@ body {
     background-color: aqua;
 }
 
-.menu  {
+.menu {
     border: none;
     background: transparent;
 }
@@ -141,17 +158,19 @@ body {
     left: -100px;
 }
 
+/*Nav animation*/
+
 @keyframes loadNav {
     from {
         position: absolute;
         top: 7rem;
-        left: -400px;  
+        left: -400px;
     }
 
     to {
         position: absolute;
         top: 7rem;
-        left: 0px;  
+        left: 0px;
     }
 }
 
@@ -159,17 +178,17 @@ body {
     position: absolute;
     top: 7rem;
     left: 0;
-    animation:  loadNav ease-in .5s;
+    animation: loadNav ease-in .5s;
     display: flex;
     flex-direction: column;
     width: 100%;
     min-height: 81vh;
-background: rgba(255, 255, 255, 0.2);
-border-radius: 4px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(8.5px);
--webkit-backdrop-filter: blur(2.5px);
-border: 1px solid rgba(255, 255, 255, 0.02);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    border: 1px solid rgba(255, 255, 255, 0.02);
 }
 
 /*
@@ -194,7 +213,8 @@ border: 1px solid rgba(255, 255, 255, 0.02);
 
 
 #start-logo {
-  margin: 0 1em;
+    max-width: 100%;
+    margin: 0 1em;
 }
 
 
@@ -204,7 +224,7 @@ border: 1px solid rgba(255, 255, 255, 0.02);
 
 
 .nav-item:first-child {
-   padding-top: 3em;
+    padding-top: 3em;
 }
 
 .nav-bar .nav-item.active:nth-child(odd) {
@@ -213,7 +233,7 @@ border: 1px solid rgba(255, 255, 255, 0.02);
 
 .nav-bar .nav-item.active:nth-child(even) {
     width: 50%;
-}  
+}
 
 .nav-bar .nav-item {
     margin: 1.3em 1.5em;
@@ -224,47 +244,124 @@ border: 1px solid rgba(255, 255, 255, 0.02);
     padding-bottom: 1em;
     border-bottom: 2px solid white;
 }
- 
 
- 
 
-@media (min-width:23em)  {
-    
-.Home-space {
-    top: 25%;
-}
+/*Destination page*/
 
-.Home-space .space--title {
-    font-size: clamp(1.3em, 1.7em, 2em);
-    padding: 0 2em;
-}
-    
+
+
+@media (min-width:23em) {
+
+    .Home-space {
+        top: 30%;
+    }
+
+    .Home-space .space--title {
+        font-size: clamp(1.3em, 1.7em, 2em);
+        padding: 0 2em;
+    }
+
     .Home-space .sub--space--text {
-    line-height: 25px;
-    padding: 0 3em;
+        line-height: 25px;
+        padding: 0 3em;
+    }
+
+    .bubble {
+        margin: 2em auto;
+        width: 175px;
+        height: 175px;
+    }
+
+}
+
+@media (min-width:64em) {
+    
+    #Home{
+        background: url(./assets/home/background-home-tablet.jpg) no-repeat ;   
+    }
+
+  
+    .Home-space {
+        position: relative;
+        top: 5%;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        padding: 0 2.1em;
+    }
+
+    
+.Home-space .space--title {
+    font-size: 1.2em;
+    min-width: 100%;
+    padding: 0 2em 0 0;
+    margin-bottom: .2em;
+}
+
+.Home-space .sub--space--text {
+    width: 67%;
+    padding: 0 .5em;
 }
 
 .bubble {
-    margin: 2em auto;
-    width: 175px;
-    height: 175px;
+    position: relative;
+    top: 35%;
+    left: -45%;
+    transform: scale(2);
+}
+
+.space--sub--title {
+    margin-top: 0;
+    margin-left: -4px;
+    text-transform: uppercase;
+    font-size: 8em !important;
+    font-weight: 300;
+    margin-bottom: 30px;
 }
 
 }
 
+@media (max-width: 90em) {
 
-@media (min-width:64em) {
-    .expandend-bg {
-        background: url(./assets/home/background-home-tablet.jpg) no-repeat;
-        background-size: 100% 100%;
-        height: 100vh;
+    .Home-space {
+        position: relative;
+        top: 33%;
     }
 
-}
-
-@media (min-width: 90em) {
-    .expandend-bg {
-        background: url(./assets/home/background-home-desktop.jpg) no-repeat;
+    #Home {
+        background: url(./assets/home/background-home-desktop.jpg) ;
+            
     }
+
+    
+
+        
+.Home-space .space--title {
+    font-size: 2em;
+    width: 65%;
+    padding: 0 2em 0 0.1em;
+    margin-bottom: .5em;
 }
 
+.Home-space .sub--space--text {
+    min-width:50%;
+    line-height: 27px;
+    font-size: 1.5em;
+}
+
+.bubble {
+    position: relative;
+    top: 45%;
+    left: -55%;
+    transform: scale(1.7);
+}
+
+
+.space--sub--title {
+    margin-top: -2%;
+    font-size: 11.5em;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+    
+}
