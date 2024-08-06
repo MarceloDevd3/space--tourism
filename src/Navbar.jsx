@@ -1,4 +1,7 @@
-import {useState} from 'react';
+import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
+
+
 import hamburger from '/assets/shared/icon-hamburger.svg';
 import close from '/assets/shared/icon-close.svg';
 import logo from './assets/shared/logo.svg';
@@ -31,24 +34,30 @@ export default function Navbar() {
 
     
 
+    
+
     return (
-        <nav className='expandend-nav--bar'>
+        <div className='space'>
+            <nav className='expandend-nav--bar'>
            <div id='start-logo'>
               <img src={logo} alt="logo"/>
            </div>
            <div className='divider'></div>
-           <button className={menuOpen ? 'menu active' : 'menu'}    onClick={toogleMenu}>
+           <button className={menuOpen ? 'menu active' : 'menu'}  onClick={toogleMenu}>
                 <img src={icon} alt="menu-icon"/>
            </button>
            <ul className={menuOpen ? 'nav-bar active' : 'nav-bar'}>
-             <li className='nav-item '><a href='#' className='nav-link'>00 Home</a></li>
-             <li className='nav-item'><a href='#' className='nav-link'>
-             01 Destination</a></li>
-             <li className='nav-item'><a href='#' className='nav-link'>
-             02 Crew</a></li>
-             <li className='nav-item'><a href='#' className='nav-link'>
-             03 Technology</a></li>
+             <li className='nav-item '>
+             <Link to='/'>00 Home</Link>  
+             </li>
+             <li className='nav-item'>
+             <Link to='/Destination'>01 Destination</Link>  </li>
+             <li className='nav-item'>
+             <Link to='/Crew'>02 Crew</Link>  
+            </li>
+             <li className='nav-item'> <Link to="Technology"> 03 Technology</Link> </li>
            </ul>
         </nav>
+        </div>
     )
 }
