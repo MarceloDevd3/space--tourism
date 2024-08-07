@@ -1,0 +1,266 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+body {
+    color: #fff;
+    font-family: "Barlow", sans-serif;
+}
+
+/*Home pagine and background*/
+
+#Home {
+    background: url(./assets/home/background-home-mobile.jpg) no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    background-size: 100% 100%;
+    height: 100vh;
+}
+
+
+
+/*nav*/
+
+.expandend-nav--bar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    width: 100vw;
+    z-index: 1;
+}
+
+.space {
+    position: absolute;
+}
+
+.divider {
+    display: none;
+    width: 55%;
+    height: 2px;
+    margin-right: -45px;
+    padding: 0 1em;
+    background-color: aqua;
+}
+
+.menu {
+    border: none;
+    background: transparent;
+}
+
+.menu img {
+    width: 30px;
+}
+
+.nav-bar {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -100px;
+}
+
+/*Nav animation*/
+
+@keyframes loadNav {
+    from {
+        position: absolute;
+        
+        left: -400px;
+    }
+
+    to {
+        position: absolute;
+        
+        left: 50%;
+    }
+}
+
+.nav-bar.active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loadNav ease-in .5s;
+    display: flex;
+    flex-direction: column;
+    width: 67%;
+    min-height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+/*
+.nav-bar {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    display: flex;
+    align-items: center;
+   
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    border: 1px solid rgba(255, 255, 255, 0.02);
+    }
+    
+*/
+
+
+#start-logo {
+    max-width: 100%;
+    margin: 0 1em;
+}
+
+
+/*.nav-item:first-child {
+    padding-left: 10%;
+}*/
+
+
+.nav-item:first-child {
+    padding-top: 3em;
+}
+
+.nav-bar .nav-item.active:nth-child(odd) {
+    width: 27%;
+}
+
+.nav-bar .nav-item.active:nth-child(even) {
+    width: 50%;
+}
+
+.nav-bar .nav-item {
+    margin: 1.3em 1.5em;
+    font-size: clamp(.5em, 1.2em, 1.5em);
+}
+
+.nav-item.active {
+    padding-bottom: 1em;
+    border-bottom: 2px solid white;
+}
+
+/*Home information*/
+
+.Home-space {
+    position: relative;
+    top: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1em;
+}
+
+
+
+.Home-space .space--title {
+    font-size: 0.9em;
+    font-weight: 300;
+    letter-spacing: 2px;
+    transform: scale(1.5);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1em 2.2em;
+    margin-bottom: 2em;
+}
+
+.Home-space .sub--space--text {
+    font-size: 1em;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 25px;
+    opacity: .7;
+    padding: 0 .5em;
+}
+
+.space--sub--title {
+    margin-top: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4em;
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+
+
+/*bubble*/
+
+.bubble {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2em auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+/*light animation*/
+
+@keyframes light {
+    from {
+        box-shadow: -3px 4px 109px -4px rgba(134, 134, 134, 0);
+    }
+
+    to {
+        box-shadow: -3px 4px 109px -4px rgba(237, 230, 230, 0.75);
+    }
+}
+
+.bubble:hover {
+    animation: light ease-in-out 1s;
+    box-shadow: -3px 4px 109px -4px rgba(237, 230, 230, 0.75);
+}
+
+.bubble-title {
+    font-weight: 300;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: clamp(1em, 1.2em, 1.5em);
+    color: #000;
+    opacity: .7;
+}
+
+
+#Destination {
+    background: url(./assets/destination/background-destination-mobile.jpg) no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+}
