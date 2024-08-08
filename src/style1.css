@@ -295,6 +295,7 @@ ul {
     font-weight: 200;
 }
 
+/*planents*/
 
 .planent--information::after {
     content: '';
