@@ -1,6 +1,5 @@
 import React from 'react';
 import PlanetEuroupe from '../destination/image-europa.webp';
-import { DivIcon } from 'leaflet';
 export default function DestinationInfoEurope() {
     return (
            <section className='Europe Destination--planent'>
