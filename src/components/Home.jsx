@@ -2,7 +2,7 @@ import React from 'react';
 export default function Destination() {
     return (
       <>
-        <div id="Home">  
+        <div id='Home'>  
           <section className='Home-space'>
              <div>
              <h1 className='space--title'>So, you want to travel to

@@ -1,7 +1,5 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
-
-
 import hamburger from '/assets/shared/icon-hamburger.svg';
 import close from '/assets/shared/icon-close.svg';
 import logo from './assets/shared/logo.svg';
@@ -31,10 +29,6 @@ export default function Navbar() {
              item.classList.add('active')
        })
     })
-
-    
-
-    
 
     return (
         <div className='space'>

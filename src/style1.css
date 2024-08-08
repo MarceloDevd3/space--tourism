@@ -5,15 +5,8 @@
     box-sizing: border-box;
 }
 
-body,
-html {
-    height: 100%;
-    margin: 0;
-}
 
-body {
-    overflow-x: hidden;
-}
+
 
 ul {
     list-style: none;
@@ -92,14 +85,12 @@ body {
 @keyframes loadNav {
     from {
         position: absolute;
-        
-        left: -400px;
+        left: -200px;
     }
 
     to {
         position: absolute;
-        
-        left: 50%;
+        left: 0;
     }
 }
 
@@ -111,7 +102,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 67%;
-    min-height: 100%;
+    min-height: 100vh;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 4px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -119,26 +110,6 @@ body {
     -webkit-backdrop-filter: blur(2.5px);
     border: 1px solid rgba(255, 255, 255, 0.02);
 }
-
-/*
-.nav-bar {
-    position: absolute;
-    top: 15%;
-    left: 0;
-    display: flex;
-    align-items: center;
-   
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 4px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8.5px);
-    -webkit-backdrop-filter: blur(2.5px);
-    border: 1px solid rgba(255, 255, 255, 0.02);
-    }
-    
-*/
 
 
 #start-logo {
@@ -146,14 +117,8 @@ body {
     margin: 0 1em;
 }
 
-
-/*.nav-item:first-child {
-    padding-left: 10%;
-}*/
-
-
 .nav-item:first-child {
-    padding-top: 3em;
+    padding-top: 7em;
 }
 
 .nav-bar .nav-item.active:nth-child(odd) {
@@ -216,7 +181,6 @@ body {
     margin-bottom: 1em;
 }
 
-
 /*bubble*/
 
 .bubble {
@@ -258,9 +222,108 @@ body {
     opacity: .7;
 }
 
+/*Destination*/
+
 
 #Destination {
     background: url(./assets/destination/background-destination-mobile.jpg) no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
     background-size: 100% 100%;
     height: 100vh;
+}
+
+.navegation > ul {
+     position: relative;
+     top: 13rem;
+     left: 11%;
+}
+
+ul {
+    display: flex
+    ;
+}
+
+.navegation > ul li {
+    margin: 0 .5em;
+}
+
+
+.planent-line {
+   position: relative;
+   top: 15%;
+}
+
+.Destination--planent .info {
+    padding: 2em;
+}
+
+.destinations-info {
+    padding: 2em;
+}
+
+.destinations-info > .planet {
+    margin: 0 20% ;
+    max-width: 100%;
+    width: 60%;
+    padding-bottom: 2em;
+}
+
+.Planents-items {
+    position: absolute;
+    display: none;
+    top: 2%;
+    left: 2%;
+}
+
+.Planents-items.active {
+    display: block;
+}
+
+.info {
+    text-align: center;
+    margin-top: -2.2rem;
+}
+
+.info > .planent-name {
+    font-size: 2.7em;
+    margin-bottom: .5em;
+    font-weight: 200;
+}
+
+
+.planent--information::after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 0.5px;
+    margin: .7em 0;
+    background-color: whitesmoke;
+    opacity: .5;
+}
+
+.info > .planent--information {
+    letter-spacing: 2px;
+}
+
+
+.destination-information  {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+}
+
+@media (min-width:23.4375em) {
+    .navegation > ul {
+        position: relative;
+        top: 15.2rem;
+        left: 20%;
+   }
+
+   
 }
