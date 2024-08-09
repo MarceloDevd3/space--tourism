@@ -49,7 +49,7 @@ export default function Navbar() {
              <li className='nav-item'>
              <Link to='/Destination'>01 Destination</Link>  </li>
              <li className='nav-item'>
-             <Link to='/Crew'>02 Crew</Link>  
+             <Link to='/CrowSlide'>02 Crew</Link>  
             </li>
              <li className='nav-item'> <Link to="Technology"> 03 Technology</Link> </li>
            </ul>

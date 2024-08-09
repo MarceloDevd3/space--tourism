@@ -30,6 +30,8 @@ const planets = document.querySelectorAll('.Planents-items')
 
   return (
       <div id='Destination'>
+      
+      <h1 className='planent--title'>01 Pick Your Destination</h1>
         <div className='planent-line'>
         <nav className='navegation'>
           <ul>

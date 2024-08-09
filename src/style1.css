@@ -237,6 +237,13 @@ body {
     height: 100vh;
 }
 
+#Destination .planent--title {
+    position: relative;
+    top: 15%;
+    margin-top: 1em;
+    font-size: 1.3em;
+    left: 20%;
+}
 .navegation > ul {
      position: relative;
      top: 14rem;
@@ -324,6 +331,82 @@ ul {
     display: flex;
     text-align: left;
     justify-content: space-between;
+}
+
+/*crew*/
+
+#Crew {
+    background: url(./assets/crew/background-crew-mobile.jpg) no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    background-size: 100% 100%;
+    height: 100vh;
+} 
+
+
+.crew--title {
+    position: relative;
+    top: 17%;
+    left: 10%;
+}
+.Slider-container {
+    padding: 1em;
+    position: relative;
+    top: 10%;
+}
+
+.Crew-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+}
+
+.item {
+    display: none;
+}
+
+.item.active {
+    display: block;
+}
+
+.Slider-Item {
+  position: absolute;
+  display: block;
+}
+
+
+.Crew-MemberImage > img {
+  position: relative;
+  left: 27%;
+  max-width: 100%;
+  width: 55%;
+  padding: 2em;
+}
+
+.btn-nav {
+    position: relative;
+    top: 64%;
+    left: 40%;
+    z-index: 4;
+}
+
+.btn-item-crew {
+   width:15px;
+   height: 15px;
+   background-color: #fff;
+   margin: 0 .5em ;
+   border-radius:50%;
+}
+
+.btn-item-crew:hover, .btn-item-crew:active {
+    background-color: aqua;
 }
 
 @media (min-width:23.4375em) {
