@@ -241,6 +241,7 @@ body {
      position: relative;
      top: 13rem;
      left: 11%;
+     z-index: 4;
 }
 
 ul {
@@ -249,9 +250,14 @@ ul {
 }
 
 .navegation > ul li {
+    position: relative;
+    z-index: 4;
     margin: 0 .5em;
 }
 
+.link-item:hover {
+    color: aqua;
+}
 
 .planent-line {
    position: relative;

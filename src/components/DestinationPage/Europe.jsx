@@ -1,5 +1,6 @@
 import React from 'react';
 import PlanetEuroupe from '../destination/image-europa.webp';
+
 export default function DestinationInfoEurope() {
     return (
            <section className='Europe Destination--planent'>

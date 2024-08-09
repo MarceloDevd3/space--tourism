@@ -17,6 +17,8 @@ export default function Navbar() {
 
     const all = document.querySelectorAll('.nav-item');
 
+    console.log(all)
+
 
     function removeMe() {
          all.forEach(item => {
