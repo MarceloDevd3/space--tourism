@@ -43,7 +43,10 @@ export default function Navbar() {
                 <img src={icon} alt="menu-icon"/>
            </button>
            <ul className={menuOpen ? 'nav-bar active' : 'nav-bar'}>
-             <li className='nav-item '>
+           <button className='menu close'  onClick={toogleMenu}>
+                <img src={icon} alt="menu-icon"/>
+           </button>
+             <li className='nav-item nav-1 '>
              <Link to='/'>00 Home</Link>  
              </li>
              <li className='nav-item'>

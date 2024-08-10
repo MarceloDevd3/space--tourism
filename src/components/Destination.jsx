@@ -30,8 +30,8 @@ const planets = document.querySelectorAll('.Planents-items')
 
   return (
       <div id='Destination'>
-      
-      <h1 className='planent--title'>01 Pick Your Destination</h1>
+
+      <h1 className='planent--title'><span id='number-space'>01</span> Pick Your Destination</h1>
         <div className='planent-line'>
         <nav className='navegation'>
           <ul>
@@ -41,13 +41,13 @@ const planets = document.querySelectorAll('.Planents-items')
              <li className='link-item'><a href='#'>Titan</a></li>
           </ul>
          </nav>
-        <div className='Planents-items active'>
+        <div className='Planents-items'>
         <Moon/>
         </div>
         <div className='Planents-items'>
         <Mars/>
         </div>
-        <div className='Planents-items'>
+        <div className='Planents-items active'>
         <Europa/>
         </div>
         <div className='Planents-items'>
