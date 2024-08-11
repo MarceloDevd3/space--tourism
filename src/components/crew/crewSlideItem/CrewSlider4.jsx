@@ -4,7 +4,7 @@ export default function CrewSlider() {
     return (
         <sectio className="Slider-Item">
             <div className='Crew-MemberImage'>
-                <img src={anoushehAnsari} alt="crew-image" />
+                <img src={anoushehAnsari} alt="crew-image" className='fix-space' />
             </div>
             <div className='Crew-info'>
                <h2 className="member-job">Flight Engineer</h2>

@@ -110,6 +110,7 @@ body {
     margin: 2em 0;
 }
 
+
 .nav-bar .nav-item {
     position: relative;
     margin: 1.3em 0 1.3em 1em;
@@ -300,6 +301,8 @@ body {
 }
 
 #number-space {
+    
+  font-family: "Barlow Condensed", sans-serif;
     letter-spacing: 4px !important;
     opacity: .5;
     text-transform: uppercase;
@@ -341,7 +344,7 @@ ul {
 
 .destinations-info > .planet {
     margin: 0 25% ;
-    margin-top: -10px;
+    margin-top: -5px;
     max-width: 100%;
     width: 55%;
 }
@@ -469,35 +472,74 @@ ul {
 
 .Slider-Item {
   position: absolute;
-  display: block;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.member-information {
+    font-size: .6em;
+    line-height: 15px;
+}
+
+
+.crew--title {
+    position: relative;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    font-weight: 100;
+    left: 27%;
+    margin: .5em 0;
+}
+
+#number-space-crew {
+    font-weight: lighter;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: lighter;
+    letter-spacing: 4px !important;
+    opacity: .5;
+    text-transform: uppercase;
+}
+
+.member-job, .member-name {
+  font-weight: 200;
+  margin: 0.4em 0;
+  text-transform: uppercase;
+}
+
+.member-name {
+    font-size: 1.7em;
 }
 
 
 .Crew-MemberImage > img {
   position: relative;
-  left: 27%;
+  left: 11%;
   max-width: 100%;
-  width: 55%;
+  width: 78%;
   padding: 2em;
+}
+
+.fix-space{
+    margin-top: 2.5rem;
 }
 
 .btn-nav {
     position: relative;
-    top: 64%;
-    left: 40%;
+    top: 46%;
+    left: 37%;
     z-index: 4;
 }
 
 .btn-item-crew {
-   width:15px;
-   height: 15px;
+   width:10px;
+   height: 10px;
    background-color: #fff;
    margin: 0 .5em ;
    border-radius:50%;
 }
 
-.btn-item-crew:hover, .btn-item-crew:active {
-    background-color: aqua;
+.btn-item-crew.active {
+    opacity: .5;
 }
 
 
