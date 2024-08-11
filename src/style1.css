@@ -439,6 +439,7 @@ ul {
     object-fit: cover;
     background-size: 100% 100%;
     height: 100vh;
+    border: 1px solid yellow;
 } 
 
 
@@ -447,11 +448,7 @@ ul {
     top: 17%;
     left: 10%;
 }
-.Slider-container {
-    padding: 1em;
-    position: relative;
-    top: 10%;
-}
+
 
 .Crew-info {
     display: flex;
@@ -472,7 +469,7 @@ ul {
 }
 
 .Slider-Item {
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column-reverse;
 }
@@ -512,39 +509,52 @@ ul {
 }
 
 
-.Crew-MemberImage{
-  position: relative;
-  top: 100% ;
-  background-color: yellow;
+.inter-space {
+    position: relative;
+    top: 11.7%;
+    padding: 3em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid wheat;
 }
 
-.space-man {
-    position: absolute;
-    top: 3.1rem;
-    left: 11%;
+
+
+/*
+.Crew-MemberImage{
+  position: relative;
+  top: 10% ;
+}
+*/
+
+.Crew-MemberImage .space-man {
+    position: relative;
+    top: 3.2rem;
+    left: 10%;
   max-width: 100%;
   width: 78%;
   padding: 2em;
 }
 
-.fix-space{
-    margin-top: 2.5rem;
-}
 
 .btn-nav {
-    position: relative;
-    top: 46%;
-    left: 37%;
-    z-index: 4;
+    position: absolute;
+    top: 45%;
+    left: 32%;
+    z-index: 1;
 }
 
 .btn-item-crew {
-   width:10px;
-   height: 10px;
+    cursor: pointer;
+    z-index: 2;
+   width:15px;  
+   height: 15px;
    background-color: #fff;
    margin: 0 .5em ;
    border-radius:50%;
 }
+
 
 .btn-item-crew.active {
     opacity: .5;
@@ -561,14 +571,7 @@ ul {
         left: 20%;
    }
 
-   .space-man {
-    position: absolute;
-    top: 5rem;
-    left: 11%;
-  max-width: 100%;
-  width: 78%;
-  padding: 2em;
-}
+
 
    
 }

@@ -32,6 +32,7 @@ export default function CrewSliderPage() {
 
      return (
         <section id="Crew">
+            <div className='inter-space'>
             <h1 className='crew--title'>
             <span id="number-space-crew">02</span> Meet your crew</h1>
             <div className='btn-nav'>
@@ -56,6 +57,7 @@ export default function CrewSliderPage() {
                <SliderItem4 />
               </div>
             </section>
+            </div>
         </section>
      )
 }
