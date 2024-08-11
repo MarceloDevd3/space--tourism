@@ -35,10 +35,10 @@ const planets = document.querySelectorAll('.Planents-items')
         <div className='planent-line'>
         <nav className='navegation'>
           <ul>
-             <li className='link-item active'><a href='#'>Moon</a></li>
-             <li className='link-item'><a href='#'>Mars</a></li>
-             <li className='link-item'><a href='#'>Europa</a></li>
-             <li className='link-item'><a href='#'>Titan</a></li>
+             <li><a className='link-item active' href='#'>Moon</a></li>
+             <li><a className='link-item' href='#'>Mars</a></li>
+             <li><a className='link-item' href='#'>Europa</a></li>
+             <li><a className='link-item' href='#'>Titan</a></li>
           </ul>
          </nav>
         <div className='Planents-items'>
