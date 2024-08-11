@@ -318,7 +318,7 @@ ul {
 
 .navegation > ul li {
     position: relative;
-    top: -35px;
+    top: -30px;
     left: -20px;
     z-index: 4;
     letter-spacing: 1px;
