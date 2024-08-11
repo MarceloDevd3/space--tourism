@@ -468,6 +468,7 @@ ul {
 
 .item.active {
     display: block;
+    z-index: 2;
 }
 
 .Slider-Item {
@@ -511,9 +512,16 @@ ul {
 }
 
 
-.Crew-MemberImage > img {
+.Crew-MemberImage{
   position: relative;
-  left: 11%;
+  top: 100% ;
+  background-color: yellow;
+}
+
+.space-man {
+    position: absolute;
+    top: 3.1rem;
+    left: 11%;
   max-width: 100%;
   width: 78%;
   padding: 2em;
@@ -552,6 +560,15 @@ ul {
         top: 15.2rem;
         left: 20%;
    }
+
+   .space-man {
+    position: absolute;
+    top: 5rem;
+    left: 11%;
+  max-width: 100%;
+  width: 78%;
+  padding: 2em;
+}
 
    
 }
