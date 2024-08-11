@@ -277,20 +277,12 @@ body {
 
 
 /*
-#Destination {
-    margin: 0;
-    height: 100vh;
-    overflow-y: scroll;
-    background-image: url(./assets/destination/background-destination-mobile.jpg);
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat; 
-}
+
 */
 
 #Destination .planent--title {
     position: relative;
-    top: 15%;
+    top: 12%;
     left: 20%;
     margin-top: 1em;
     font-size: .9em;
@@ -301,41 +293,37 @@ body {
 }
 
 #number-space {
-    
   font-family: "Barlow Condensed", sans-serif;
     letter-spacing: 4px !important;
     opacity: .5;
     text-transform: uppercase;
 }
-.navegation > ul {
+.navegation{
      position: relative;
-     top: 14rem;
-     left: 11%;
-     z-index: 4;
 }
 
-ul {
-    display: flex
-    ;
+.nav-planents {
+    display: flex;
+    position: absolute;
+    top: 15.5rem;
+    left: 11%;
+    z-index: 4;
 }
 
 .navegation > ul li {
-    position: relative;
-    top: -30px;
-    left: -20px;
     z-index: 4;
     letter-spacing: 1px;
     margin: 0 .7em;
 }
 
 .planent-line {
-   position: relative;
-   top: 10%;
-   padding-bottom: 10%;
+   width: 100%;
+   height: 100%;
+   margin: 1em 0;
 }
 
 .Destination--planent .info {
-    padding: 2em 1.7em;
+    padding: 2.5em 1.7em;
 }
 
 .destinations-info {
@@ -343,17 +331,25 @@ ul {
 }
 
 .destinations-info > .planet {
+    position: relative;
+    top: 2rem;
     margin: 0 25% ;
-    margin-top: -5px;
     max-width: 100%;
     width: 55%;
 }
+/*
 
 .Planents-items {
     position: absolute;
     display: none;
     top: 2%;
     left: 2%;
+    border: 1px solid #fff;
+}
+*/
+
+.Planents-items {
+    display: none;
 }
 
 .Planents-items.active {
@@ -368,7 +364,7 @@ ul {
 .info > .planent-name {
     text-transform: uppercase;
     font-size: 2.7em;
-    margin-bottom: .5em;
+    margin: .2em 0;
     font-weight: 200;
 }
 
@@ -391,7 +387,7 @@ ul {
     display: block;
     width: 100%;
     height: 0.5px;
-    margin: .7em 0;
+    margin: .5em 0;
     background-color: whitesmoke;
     opacity: .5;
 }
@@ -412,7 +408,7 @@ ul {
 
 
 .travel--time {
-    margin: 1em 0;
+    margin: .7em 0;  
 }
 
 .travel--time p:first-child, .travel-days  p:first-child{
@@ -438,10 +434,134 @@ ul {
     height: 100vh;
     object-fit: cover;
     background-size: 100% 100%;
-    height: 100vh;
-    border: 1px solid yellow;
 } 
 
+.inter-space  {
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.space-man {
+    width: 50%;
+}
+
+
+.Slider-Item {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.Crew-MemberImage{
+    height: 50%;
+}
+
+.item {
+    display: none;
+}
+
+.item.active {
+    display: block;
+    
+    z-index: 2;
+}
+
+.space-man {
+    position: relative;
+    width: 65%;
+    left: 17%;
+}
+
+.fix-space  {
+    top: 5%;
+}
+
+.crew--title {
+    position: relative;
+    top: 17%;
+    z-index: 1;
+    left: 10%;
+}
+
+.Crew-info {
+    text-align: center;
+    padding: 2em;
+}
+
+
+.member-information {
+    font-size: .61em;
+    line-height: 15px;
+    padding: 0 1em;
+}
+
+.crew--title {
+    position: relative;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    font-weight: 100;
+    left: 27%;
+    margin: .5em 0;
+}
+
+#number-space-crew {
+    font-weight: lighter;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: lighter;
+    letter-spacing: 4px !important;
+    opacity: .5;
+    text-transform: uppercase;
+}
+
+.member-job, .member-name {
+  font-weight: 200;
+  margin: 0.4em 0;
+  text-transform: uppercase;
+}
+
+.member-name {
+    font-size: 1.7em;
+}
+
+
+.btn-nav > ul {
+    display: flex;
+}
+
+.btn-nav {
+    position: absolute;
+    z-index: 1 !important;
+    top: 54%;
+    left: 32%;
+}
+
+.btn-item-crew {
+   width:15px;  
+   height: 15px;
+   background-color: #fff;
+   margin: 0 .5em ;
+   border-radius:50%;
+}
+
+.btn-nav li {
+    cursor: pointer;
+}
+
+.btn-item-crew.active {
+    opacity: .5;
+}
+
+
+
+
+/*
 
 .crew--title {
     position: relative;
@@ -478,7 +598,6 @@ ul {
     font-size: .6em;
     line-height: 15px;
 }
-
 
 .crew--title {
     position: relative;
@@ -519,15 +638,6 @@ ul {
     border: 1px solid wheat;
 }
 
-
-
-/*
-.Crew-MemberImage{
-  position: relative;
-  top: 10% ;
-}
-*/
-
 .Crew-MemberImage .space-man {
     position: relative;
     top: 3.2rem;
@@ -561,9 +671,6 @@ ul {
 }
 
 
-
-
-
 @media (min-width:23.4375em) {
     .navegation > ul {
         position: relative;
@@ -575,3 +682,8 @@ ul {
 
    
 }
+
+*/
+
+
+

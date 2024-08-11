@@ -34,7 +34,7 @@ const planets = document.querySelectorAll('.Planents-items')
       <h1 className='planent--title'><span  id='number-space'>01</span> Pick Your Destination</h1>
         <div className='planent-line'>
         <nav className='navegation'>
-          <ul>
+          <ul className='nav-planents'>
              <li><a className='link-item active' href='#'>Moon</a></li>
              <li><a className='link-item' href='#'>Mars</a></li>
              <li><a className='link-item' href='#'>Europa</a></li>

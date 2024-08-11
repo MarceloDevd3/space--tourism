@@ -8,7 +8,7 @@ import SliderItem4 from './crewSlideItem/CrewSlider4';
 export default function CrewSliderPage() {
 
    const btns = document.querySelectorAll('.btn-item-crew')
-   const sliderItens = document.querySelectorAll('.item')
+   const sliderItens = document.querySelectorAll('Slider-container.item')
 
   let navegationBar = function(manual) {
      btns.forEach((btnItem) => {
