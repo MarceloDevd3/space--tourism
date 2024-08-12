@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import Home from './components/Home';
 import Destination from './components/Destination';
 import CrewSliderPage from './components/crew/CrowSlide';
+import TecSliderPage from './components/Tec/Tecnology';
 import './style1.css';
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
                <Route exact path='/' Component={Home}></Route>
                <Route path='/Destination' Component={Destination}></Route>
                <Route path='/CrowSlide' Component={CrewSliderPage}></Route>
+               <Route path='/Tecnology' Component={TecSliderPage}></Route>
            </Routes>
        </Router>
     </>

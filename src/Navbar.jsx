@@ -54,7 +54,7 @@ export default function Navbar() {
              <li className='nav-item'>
              <Link to='/CrowSlide'>02 Crew</Link>  
             </li>
-             <li className='nav-item'> <Link to="Technology"> 03 Technology</Link> </li>
+             <li className='nav-item'> <Link to="Tecnology"> 03 Technology</Link> </li>
            </ul>
         </nav>
         </div>

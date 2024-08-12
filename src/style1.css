@@ -511,7 +511,7 @@ body {
     margin: .5em 0;
 }
 
-#number-space-crew {
+#number-space-crew, #num {
     font-weight: lighter;
   font-family: "Barlow Condensed", sans-serif;
   font-weight: lighter;
@@ -558,8 +558,96 @@ body {
     opacity: .5;
 }
 
+#Tec-zone {
+    background: url(./assets/technology/background-technology-mobile.jpg) no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    background-size: 100% 100%;
+}
+
+.container{
+    position: relative;
+    top: 7rem;
+}
+
+.navegation-tac {
+    position: relative;
+    top: 12.8rem;
+}
 
 
+.tec-item {
+    display: none;
+    position: absolute;
+}
+
+.tec--title {
+    position: relative;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    font-weight: 100;
+    top: 15%;
+    left: 23%;
+    margin: .5em 0;
+}
+
+.tac-line {
+    position: absolute;
+    top: -2rem;
+    left: 20%;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: aqua;
+}
+
+.tac-slider-item {
+    margin: 0 1.1em;
+    width: 40px;
+    height: 40px;
+    padding: .55em .5em;
+    border-radius: 50px;
+    border: 1px solid #D0D6F9;
+}
+
+.tac-slider-item.active {
+    background-color: #D0D6F9;
+}
+
+.tec-item.active {
+    display: flex;
+} 
+
+.card-content {
+    padding: 1em ;
+    text-align: center;
+}
+
+#num {
+   margin-right: 15px;
+}
+
+.full {
+  width: 100%;
+}
+
+.card-content-title {
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 1.4em;
+    margin: 2em 0 .4em 0;
+    padding: .5em 2em;
+}
+
+.card-content-text {
+    font-size: .74em;
+    line-height: 15px;
+}
 
 /*
 
