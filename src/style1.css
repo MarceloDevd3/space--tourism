@@ -550,6 +550,10 @@ body {
    margin: 0 .5em ;
 }
 
+.btn-item-crew > a {
+    visibility: hidden;
+}
+
 .btn-nav li {
     cursor: pointer;
 }
@@ -597,7 +601,7 @@ body {
 
 .tac-line {
     position: absolute;
-    top: 2rem;
+    top: -2rem;
     left: 20%;
     z-index: 1;
     display: flex;
@@ -634,7 +638,6 @@ body {
 
 .full {
   width: 100%;
-  height: 40vh;
 }
 
 .card-content-title {
