@@ -16,7 +16,7 @@ export default function CrewSliderPage() {
    const btns = document.querySelectorAll('.btn-item-crew')
    const sliderItens = document.querySelectorAll('.item')
 
-  let CrewNavBar = function(manual) {
+  function CrewNavBar(manual) {
      btns.forEach((btnItem) => {
       btnItem.classList.remove('active')
      })
@@ -29,7 +29,7 @@ export default function CrewSliderPage() {
      sliderItens[manual].classList.add('active')
   }
 
-  btns.forEach((item, index) => {
+     btns.forEach((item, index) => {
       item.addEventListener('click', function() {
          CrewNavBar(index)
       })

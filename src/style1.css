@@ -308,6 +308,8 @@ body {
     top: 15.5rem;
     left: 11%;
     z-index: 4;
+    
+   background-color: aqua;
 }
 
 .navegation > ul li {
@@ -350,6 +352,7 @@ body {
 
 .Planents-items {
     display: none;
+    z-index: 1;
 }
 
 .Planents-items.active {
@@ -533,11 +536,12 @@ body {
 
 .btn-nav {
     display: flex;
-    z-index: 5 !important;
-    position: absolute;
-    top: 52.2%;
-    left: 33.2%;
+    position: relative;
+    z-index: 5;
+    top: 45.5%;
+    left: 33%;
     cursor: pointer;
+    padding: 1em 0;
 }
 
 
@@ -550,9 +554,7 @@ body {
    margin: 0 .5em ;
 }
 
-.btn-item-crew > a {
-    visibility: hidden;
-}
+
 
 .btn-nav li {
     cursor: pointer;
@@ -601,7 +603,7 @@ body {
 
 .tac-line {
     position: absolute;
-    top: -2rem;
+    top: .2rem;
     left: 20%;
     z-index: 1;
     display: flex;
@@ -611,8 +613,8 @@ body {
 
 .tac-slider-item {
     margin: 0 1.1em;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     padding: .55em .5em;
     border-radius: 50px;
     background-color: transparent;
@@ -638,11 +640,13 @@ body {
 
 .full {
   width: 100%;
+  margin: 1.7em 0;
 }
 
 .card-content-title {
     text-transform: uppercase;
     font-weight: lighter;
+    line-height: 35px;
     font-size: 1.4em;
     margin: 2em 0 .4em 0;
     padding: .5em 2em;
