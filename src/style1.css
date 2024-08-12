@@ -531,23 +531,23 @@ body {
 }
 
 
-.btn-nav > ul {
+.btn-nav {
     display: flex;
+    z-index: 5 !important;
+    position: absolute;
+    top: 52.2%;
+    left: 33.2%;
+    cursor: pointer;
 }
 
-.btn-nav {
-    position: absolute;
-    z-index: 1 !important;
-    top: 54%;
-    left: 32%;
-}
 
 .btn-item-crew {
    width:15px;  
    height: 15px;
+   border: none;
+   border-radius: 50px;
    background-color: #fff;
    margin: 0 .5em ;
-   border-radius:50%;
 }
 
 .btn-nav li {
@@ -571,7 +571,7 @@ body {
 
 .container{
     position: relative;
-    top: 7rem;
+    top: 6.5rem;
 }
 
 .navegation-tac {
@@ -597,13 +597,12 @@ body {
 
 .tac-line {
     position: absolute;
-    top: -2rem;
+    top: 2rem;
     left: 20%;
-    z-index: 5;
+    z-index: 1;
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: aqua;
 }
 
 .tac-slider-item {
@@ -612,6 +611,7 @@ body {
     height: 40px;
     padding: .55em .5em;
     border-radius: 50px;
+    background-color: transparent;
     border: 1px solid #D0D6F9;
 }
 
@@ -634,6 +634,7 @@ body {
 
 .full {
   width: 100%;
+  height: 40vh;
 }
 
 .card-content-title {

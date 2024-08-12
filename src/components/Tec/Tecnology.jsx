@@ -38,11 +38,11 @@ export default function TecSliderPage() {
         
          <div className='container'>
           <nav className='navegation-tac'>
-            <ul className='tac-line'>
-               <li className='tac-slider-item active'>1</li>
-               <li className='tac-slider-item'>2</li>
-               <li className='tac-slider-item'>3</li>
-            </ul>
+            <div className='tac-line'>
+               <button className='tac-slider-item active'><a href='#'>1</a></button>
+               <button className='tac-slider-item'><a href='#'>2</a></button>
+               <button className='tac-slider-item'><a href='#'>3</a></button>
+            </div>
           </nav>
          <div className='tec-item active'>
            <CardItem img={Img1} name={"Launch vehicle"} id={id} description={"A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!"}/>
