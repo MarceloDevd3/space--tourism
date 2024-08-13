@@ -5,9 +5,9 @@ export default function CrewSliderBase(props) {
             <div className='Crew-MemberImage'>
                 <img src={props.CrewImg} alt="crew-image" className={props.classes} />
             </div>
-            <div className='Crew-info'>
-               <h2 className="member-job">{props.job}</h2>
-               <h3 className="member-name">{props.name}</h3>
+            <div className='Crew-info text-center '>
+               <h2 className="member-job up--Text">{props.job}</h2>
+               <h3 className="member-name up--Text">{props.name}</h3>
                <p className="member-information">{props.info}</p>
             </div>
         </sectio>

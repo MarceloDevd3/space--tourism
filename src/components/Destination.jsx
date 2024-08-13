@@ -31,9 +31,9 @@ export default function DestinationPage() {
   })
 
   return (
-    <div id='Destination'>
+    <section id='Destination' className='bg-img-destination fullScreen  bg-img-setters'>
 
-      <h1 className='planent--title'><span id='number-space'>01</span> Pick Your Destination</h1>
+      <h1 className='planent--title up--Text'><span id='number-space' className='up--Text'>01</span> Pick Your Destination</h1>
       <div className='planent-line'>
         <nav className='navegation'>
           <ul className='nav-planents'>
@@ -84,6 +84,6 @@ export default function DestinationPage() {
           />
         </div>
       </div>
-    </div>
+    </section>
   )
 }

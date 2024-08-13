@@ -1,17 +1,12 @@
 import React from 'react';
-
 import SliderItem from './crewSlideItem/CrewSlideBase';
 import DouglasHurley from './img/crew/image-douglas-hurley.png';
 import markShuttleworth from './img/crew/image-mark-shuttleworth.png';
 import victorGlover from './img/crew/image-victor-glover.png';
 import anoushehAnsari from './img/crew/image-anousheh-ansari.png';
 
-//import SliderItem1 from './crewSlideItem/CrewSlider1';
-//import SliderItem2 from './crewSlideItem/CrewSlider2';
-//import SliderItem3 from './crewSlideItem/CrewSlider3';
-//import SliderItem4 from './crewSlideItem/CrewSlider4';
-
 export default function CrewSliderPage() {
+
 
    const btns = document.querySelectorAll('.btn-item-crew')
    const sliderItens = document.querySelectorAll('.item')
@@ -35,12 +30,12 @@ export default function CrewSliderPage() {
       })
   })
 
-
+  
      return (
-        <section id="Crew">
+        <section id="Crew" className='bg-img-crew fullScreen bg-img-setters'>
             <div className='inter-space'>
-            <h1 className='crew--title'>
-            <span id="number-space-crew">02</span> Meet your crew</h1>
+            <h1 className='crew--title up--Text'>
+            <span id="number-space-crew up--Text">02</span> Meet your crew</h1>
             <div className='btn-nav'>
                   <button className='btn-item-crew'><a href='#'>1</a></button>
                   <button className='btn-item-crew'><a href='#'>1</a></button>

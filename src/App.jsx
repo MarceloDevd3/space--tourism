@@ -5,7 +5,7 @@ import Home from './components/Home';
 import Destination from './components/Destination';
 import CrewSliderPage from './components/crew/CrowSlide';
 import TecSliderPage from './components/Tec/Tecnology';
-import './style1.css';
+import './style.css';
 function App() {
   return (
     <> 

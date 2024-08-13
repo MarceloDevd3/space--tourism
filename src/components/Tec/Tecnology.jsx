@@ -33,12 +33,12 @@ export default function TecSliderPage() {
   
 
      return (
-         <section id="Tec-zone">
-         <h1 className='tec--title'> <span id='num'>03</span>Space launch 101</h1>
+         <section id="Tec-zone" className='bg-img-tec fullScreen  bg-img-setters'>
+         <h1 className='tec--title up--Text'> <span id='num' className='up--Text'>03</span>Space launch 101</h1>
         
          <div className='container'>
           <nav className='navegation-tac'>
-            <div className='tac-line'>
+            <div className='tac-line text-center '>
                <button className='tac-slider-item active'><a href='#'>1</a></button>
                <button className='tac-slider-item'><a href='#'>2</a></button>
                <button className='tac-slider-item'><a href='#'>3</a></button>
