@@ -35,7 +35,7 @@ export default function CrewSliderPage() {
         <section id="Crew" className='bg-img-crew fullScreen bg-img-setters'>
             <div className='inter-space'>
             <h1 className='crew--title up--Text'>
-            <span id="number-space-crew up--Text">02</span> Meet your crew</h1>
+            <span id="number-space-crew" className='up--Text'>02</span> Meet your crew</h1>
             <div className='btn-nav'>
                   <button className='btn-item-crew'><a href='#'>1</a></button>
                   <button className='btn-item-crew'><a href='#'>1</a></button>
@@ -46,7 +46,7 @@ export default function CrewSliderPage() {
               <div className='item'> 
                <SliderItem
                  CrewImg={DouglasHurley}
-                 classes={"space-man"}
+                 classes={"space-man fix-man"}
                  job={'Commander'}
                  name={'Douglas Hurley'}
                  info={"Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2."}

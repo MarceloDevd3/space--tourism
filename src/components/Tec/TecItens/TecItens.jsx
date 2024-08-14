@@ -4,7 +4,9 @@ export default function TecItem(props) {
     return (
         <article className='slider-item'>
         <div className='slide-image-item'>
-           <img src={props.img} alt='image' className='full' id={props.id} />
+        <div className='full'></div>
+           <img src={props.img} alt='image' className='full mobile' id={props.id} />
+           <img src={props.img2} alt='image' className='full tablet' id={props.id} />
         </div>
         <div className='card-content text-center '>
            <h2 className='card-content-title up--Text'>

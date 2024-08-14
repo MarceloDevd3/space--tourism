@@ -1,0 +1,298 @@
+@media (min-width:37.5rem) {
+
+    .bg-img-home {
+        background: url(./assets/home/background-home-tablet.jpg) no-repeat;
+        background-size: 100% 100%;
+    }
+
+    /*nav and home*/
+    .nav-bar,
+    .nav-bar.active {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 81%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 0;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(8.5px);
+        -webkit-backdrop-filter: blur(2.5px);
+        border: 1px solid rgba(255, 255, 255, 0.02);
+    }
+
+    .nav-item {
+        display: flex;
+        flex-direction: row !important;
+        font-size: .9em !important;
+        background-color: red;
+    }
+
+
+    .nav-item.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .nav-item.active::after {
+        content: '';
+        position: relative;
+        top: 2.5rem;
+        right: 0;
+        width: 100%;
+        height: 2.5px;
+    }
+
+    .nav-bar .nav-item {
+        position: relative;
+        margin: 1.5em 1em;
+    }
+
+    #start-logo {
+        margin-left: 10px;
+    }
+
+    .nav-1 {
+        padding-top: 0em;
+        padding-left: 15%;
+    }
+
+    .menu-open,
+    .menu-close {
+        display: none;
+    }
+
+
+    .Home-space {
+        position: relative;
+        top: 19%;
+    }
+
+    .Home-space .space--title {
+        font-size: 1.7em;
+        letter-spacing: 2px;
+        padding: 1em;
+        margin-bottom: .1em;
+    }
+
+    .Home-space .sub--space--text {
+        font-size: 1em;
+        padding: 0 12rem;
+        letter-spacing: 1px;
+        line-height: 30px;
+        color: #D0D6F9;
+    }
+
+    .space--sub--title {
+        margin-top: 0 auto;
+        font-size: 6em;
+        letter-spacing: 5px;
+        margin-bottom: 0;
+    }
+
+    .bubble {
+        margin: 3em auto 0 auto;
+        width: 200px;
+        height: 200px;
+    }
+
+    .bubble:hover::after {
+        top: -13%;
+        left: -12%;
+        width: 250px;
+        height: 250px;
+    }
+
+
+    .bubble-title {
+        font-size: 1.5em;
+    }
+
+
+    /*Destination*/
+    .bg-img-destination {
+        background: url(./assets/destination/background-destination-tablet.jpg) no-repeat;
+        background-size: 100% 100%;
+    }
+
+    #Destination .planent--title {
+        position: relative;
+        top: 14.5%;
+        left: 4%;
+        margin-top: 1.5em;
+        font-size: 1.1em;
+    }
+
+    .Destination--planent .info {
+        padding: 5.5em 17rem;
+    }
+
+    .destinations-info {
+        width: 55%;
+    }
+
+    .destinations-info>.planet {
+        position: relative;
+        top: 2.5rem;
+        left: 13rem;
+    }
+
+    .nav-planents {
+        position: absolute;
+        top: 22.7rem;
+        left: 22.5rem;
+    }
+
+    .navegation>ul li {
+        margin: 0 .9em;
+    }
+
+    .info>.planent-name {
+        font-size: 4em;
+        margin: .1em 0;
+        font-weight: 200;
+    }
+
+    .planent--information::after {
+        margin: .7em 0;
+    }
+
+    .destination-information {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .travel-days {
+        margin-top: .7em;
+    }
+
+    /*crew-section*/
+
+    .bg-img-crew {
+        background: url(./assets/crew/background-crew-tablet.jpg) no-repeat;
+        background-size: 100% 100%;
+    }
+
+    #number-space-crew {
+        margin-right: .7em;
+    }
+
+    .crew--title {
+        top: 15%;
+        font-size: 1.1em;
+        left: 2%;
+    }
+
+    .Slider-Item {
+        position: absolute;
+        top: 15%;
+        left: 2%;
+    }
+
+    .Crew-info {
+        margin-top: -2.5em;
+        padding: 2em 12rem;
+    }
+
+    .member-information {
+        font-size: 1em;
+        line-height: 22px;
+    }
+
+    .member-job {
+        font-size: 1.3em;
+        font-weight: lighter;
+    }
+
+    .btn-nav {
+        top: 42%;
+        left: 42.9%;
+    }
+
+    .btn-item-crew {
+        width: 20px;
+        height: 20px;
+    }
+
+    .Crew-MemberImage {
+        position: relative;
+        top: -10%;
+        height: 50%;
+    }
+
+    .space-man {
+        width: 50%;
+        top: 7em;
+        left: 25%;
+    }
+
+    .fix-man {
+        top: 5em;
+    }
+
+    /*Tec-area*/
+
+    .bg-img-tec {
+        background: url(./assets/technology/background-technology-tablet.jpg) no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .slide-image-item > .full {
+        position: relative;
+        top: -24rem;
+        width: 100%;
+        /**/
+        object-position: 100% 15%; /* Move a posição da imagem (x% y%) */
+    }
+
+    
+.card-content {
+    position: relative;
+    top: -24rem;
+    padding: .1em 17rem;
+}
+
+.tac-line {
+    position: absolute;
+    top:11rem;
+    left: 37%;
+}
+
+ .mobile  {
+   display: none;
+ }
+
+.tablet {
+    display: block;
+}
+
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+  
+}

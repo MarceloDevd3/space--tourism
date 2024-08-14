@@ -11,9 +11,6 @@ export default function Navbar() {
     const toogleMenu = () => {
         setMenuOpen(prevState => !prevState)
     }
-    const icon = menuOpen ? close: hamburger
-
-    
 
     const all = document.querySelectorAll('.nav-item');
 
@@ -39,12 +36,12 @@ export default function Navbar() {
               <img src={logo} alt="logo"/>
            </div>
            <div className='divider'></div>
-           <button className={menuOpen ? 'menu active' : 'menu'}  onClick={toogleMenu}>
-                <img src={icon} alt="menu-icon"/>
+           <button className={menuOpen ? 'menu active' : 'menu'}  onClick={toogleMenu} >
+                <img src={hamburger} alt="menu-icon" className='menu-open' / >
            </button>
            <ul className={menuOpen ? 'nav-bar active' : 'nav-bar'}>
            <button className='menu close'  onClick={toogleMenu}>
-                <img src={icon} alt="menu-icon"/>
+                <img src={close} alt="menu-icon" className='menu-close'/>
            </button>
              <li className='nav-item active nav-1 '>
              <Link to='/'>00 Home</Link>  

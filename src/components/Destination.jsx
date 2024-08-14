@@ -43,7 +43,7 @@ export default function DestinationPage() {
             <li><a className='link-item' href='#'>Titan</a></li>
           </ul>
         </nav>
-      <div className='Planents-items'>
+      <div className='Planents-items active'>
           <PlanentsBase
             classes={"Moon Destination--planent"}
             PlanetImg={planentMoon}
@@ -63,7 +63,7 @@ export default function DestinationPage() {
           years={"9 months"}
          />
         </div>
-        <div className='Planents-items active'>
+        <div className='Planents-items'>
           <PlanentsBase
             classes={"Europe Destination--planent"}
             PlanetImg={planetEuroupe}
