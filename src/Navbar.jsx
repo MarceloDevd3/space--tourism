@@ -43,7 +43,7 @@ export default function Navbar() {
            <button className='menu close'  onClick={toogleMenu}>
                 <img src={close} alt="menu-icon" className='menu-close'/>
            </button>
-             <li className='nav-item active nav-1 '>
+             <li id="pad-top" className='nav-item active '>
              <Link to='/'>00 Home</Link>  
              </li>
              <li className='nav-item'>

@@ -556,7 +556,7 @@ a,
 
 .navegation-tac {
     position: relative;
-    top: 12.8rem;
+    top: 9.8rem;
 }
 
 
@@ -570,7 +570,8 @@ a,
     word-spacing: 5px;
     font-weight: 100;
     top: 15%;
-    left: 27%;
+    left: 15.5%;
+    font-size: 1.3em;
     margin: .5em 0;
 }
 
@@ -644,9 +645,16 @@ a,
     line-height: 15px;
 }
 
-
+#pad-top {
+    padding-top: 6.5em;
+}
+/*tablet*/
 
 @media (min-width:37.5rem) {
+
+    #pad-top {
+        padding-top: 0em;
+    }
 
     .bg-img-home {
         background: url(./assets/home/background-home-tablet.jpg) no-repeat;
@@ -677,8 +685,18 @@ a,
         border: 1px solid rgba(255, 255, 255, 0.02);
     }
 
-    .nav-1 {
-        padding-top: 0em;
+    .nav-item.active::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 3.2rem;
+        right: 0;
+        width: 100%;
+        height: 2.5px;}
+    
+
+    .nav-item {
+        font-size: 1em !important;
     }
 
     .nav-item.active {
@@ -687,22 +705,8 @@ a,
         justify-content: space-between;
     }
 
-    .nav-item {
-        display: flex;
-        flex-direction: row;
-        font-size: 1em !important;
-        padding-top: 0.5em;
-    }
 
-    .nav-item.active::after {
-        content: '';
-        position: absolute;
-        top: 3.2rem;
-        right: 0;
-        width: 100%;
-        height: 2.5px;
-    }
-
+ 
     /*Home space*/
 
     .Home-space {
@@ -788,7 +792,7 @@ a,
     }
 
     .planent--information {
-      font-size: 1.1em !important;
+        font-size: 1.1em !important;
     }
 
     .planent--information::after {
@@ -811,12 +815,23 @@ a,
         background-size: 100% 100%;
     }
 
+    .btn-item-crew {
+        width: 25px;
+        height: 25px;
+        border: none;
+        border-radius: 50px;
+        background-color: #fff;
+        margin: 0 .7em;
+    }
+
 
     .crew--title {
         top: 15%;
         font-size: 1.1em;
         left: 5%;
     }
+
+    
 
     #number-space-crew {
         margin-right: .7em;
@@ -840,9 +855,10 @@ a,
     }
 
     .btn-nav {
-        top: 45%;
-        left: 39.5%;
+        top: 47% !important;
+        left: 37.5%;
     }
+
 
     .Crew-MemberImage {
         position: relative;
@@ -856,7 +872,7 @@ a,
         left: 17%;
     }
 
-    .fix-space  {
+    .fix-space {
         top: 10rem;
     }
 
@@ -864,12 +880,13 @@ a,
     .fix-man {
         left: 18%;
         top: 7em;
-    } 
+    }
+
     /*Technology*/
 
-    
 
-    .slide-image-item > .full {
+
+    .slide-image-item>.full {
         position: relative;
         top: 2rem;
         width: 100%;
@@ -878,7 +895,7 @@ a,
 
     .tac-line {
         position: absolute;
-        top:10rem;
+        top: 13rem;
         left: 30%;
     }
 
@@ -890,12 +907,12 @@ a,
         padding: 1em 4rem;
     }
 
-    
+
     .tec--title {
-        top: 10%;
-        left: 5%;
-        margin: .5em 0;
+        top: 12% !important;
+        left: 3%;
     }
+
 
     .card-content-title {
         font-size: 1.7em;
@@ -906,14 +923,111 @@ a,
         font-size: 1.2em;
         line-height: 35px;
     }
+}
 
-        
 
-    
+@media (min-width:48em) {
+
+    .nav-item.active::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 3.2rem;
+        right: 0;
+        width: 100%;
+        height: 2.5px;
+    }
+
+
+    /*Destination*/
+    .Destination--planent .info {
+        padding: 4.5em 5rem;
+    }
+
+    #Destination .planent--title {
+        font-size: 1.2em;
+    }
+
+
+    .nav-planents {
+        position: absolute;
+        top: 30.5rem;
+        left: 13rem;
+    }
+
+    .navegation>ul li {
+        font-size: 1.2em;
+        z-index: 4;
+        letter-spacing: 1px;
+        margin: 0 .7em;
+    }
+
+    .info>.planent-name {
+        margin-top: .9em;
+    }
+
+    .destinations-info {
+        width: 65%;
+    }
+
+    .destinations-info>.planet {
+        top: 5.5rem;
+        left: 5rem;
+    }
+
+    /*Crew*/
+
+    .crew--title {
+        top: 15%;
+        font-size: 1.2em;
+        left: 5%;
+    }
+
+    .Crew-info {
+        font-size: 1.4em;
+        margin-top: -1.5em;
+    }
+
+
+    .btn-nav {
+        top: 45%;
+        left: 36.5%;
+    }
+
+    .btn-item-crew {
+        width: 25px;
+        height: 25px;
+        border: none;
+        border-radius: 50px;
+        background-color: #fff;
+        margin: 0 .7em;
+    }
+
+    /*Tecnology*/
+
+    .tac-line {
+        position: absolute;
+        top: 17rem;
+        left: 31%;
+    }
+
+    .tac-slider-item {
+        margin: 0 1.3em;
+        width: 50px;
+        height: 50px;
+    }
+
+    .card-content-title {
+        padding: 0 10rem;
+        margin: 1em 0;
+        font-size: 1.7em;
+        line-height: 35px;
+    }
 
 
 }
 
+/*Desktops*/
 
 @media (min-width: 90em) {
 
@@ -937,25 +1051,25 @@ a,
     }
 
     .nav-item {
-        padding:.5em 1.2em ;
+        padding: .5em 1.2em;
         font-size: 1.2em !important;
     }
 
-   
 
-  .divider {
-    content: '';
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    top: 2.5rem;
-    left: 6rem;
-    width: 25%;
-    z-index: 3;
-    height: 1px;
-    opacity: .5;
-    background-color:#D0D6F9;
-  }
+
+    .divider {
+        content: '';
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 2.5rem;
+        left: 6rem;
+        width: 25%;
+        z-index: 3;
+        height: 1px;
+        opacity: .5;
+        background-color: #D0D6F9;
+    }
 
 
 }
