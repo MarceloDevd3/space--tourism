@@ -640,6 +640,15 @@ a,
 #pad-top {
     padding-top: 6.5em;
 }
+
+@media (min-width:405px) {
+    .navegation {
+        position: relative;
+        top: 1%;
+        left: 6.5%;
+    }   
+}
+
 /*tablet*/
 
 @media (min-width:37.5rem) {
@@ -759,6 +768,15 @@ a,
         padding: 7.5em 5rem;
     }
 
+    .link-item {
+        font-size: 1.2em;
+    }
+
+    .navegation {
+        position: relative;
+        top: -1%;
+        left: -2%;
+    }   
 
     .info>.planent-name {
         font-size: 6.5em;
@@ -847,8 +865,8 @@ a,
     }
 
     .btn-nav {
-        top: 47% !important;
-        left: 37.5%;
+        top: 45% !important;
+        left: 33.5%;
     }
 
 
@@ -887,7 +905,7 @@ a,
 
     .tac-line {
         position: absolute;
-        top: 13rem;
+        top: 13.5rem;
         left: 30%;
     }
 
@@ -895,7 +913,7 @@ a,
     .card-content {
         font-size: 1em;
         position: relative;
-        top: 3em;
+        top: 3.5em;
         padding: 1em 4rem;
     }
 
@@ -1021,7 +1039,12 @@ a,
 
 /*Desktops*/
 
-@media (min-width: 62.5em) {
+@media (min-width: 62em) {
+
+    #pad-top {
+        padding-top: .5em;
+    }
+
 
     .nav-bar,
     .nav-bar.active {
@@ -1031,8 +1054,8 @@ a,
         display: flex;
         align-items: center;
         flex-direction: row;
-        width: 70%;
-        height: 80%;
+        width: 77%;
+        height: 75%;
         padding-left: 12%;
         background: rgba(255, 255, 255, 0.2);
         border-radius: 0;
@@ -1044,7 +1067,12 @@ a,
 
     .nav-item {
         padding: .5em 1.2em;
-        font-size: 1.2em !important;
+        font-size: 1.1em !important;
+    }
+
+    .nav-item.active::after {
+        top: 3.3rem;
+        right: 0;
     }
 
 
