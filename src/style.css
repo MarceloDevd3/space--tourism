@@ -513,7 +513,6 @@ a,
     font-size: 1.7em;
 }
 
-
 .btn-nav {
     display: flex;
     position: relative;
@@ -524,7 +523,6 @@ a,
     padding: 1em 0;
 }
 
-
 .btn-item-crew {
     width: 15px;
     height: 15px;
@@ -534,8 +532,6 @@ a,
     margin: 0 .5em;
 }
 
-
-
 .btn-nav li {
     cursor: pointer;
 }
@@ -543,6 +539,8 @@ a,
 .btn-item-crew.active {
     opacity: .5;
 }
+
+/*Tecnology*/
 
 .bg-img-tec {
     background: url(./assets/technology/background-technology-mobile.jpg) no-repeat;
@@ -557,8 +555,8 @@ a,
 .navegation-tac {
     position: relative;
     top: 8.8rem;
+    background-color: red;
 }
-
 
 .tec-item {
     display: none;
@@ -592,11 +590,6 @@ a,
     border-radius: 50px;
     background-color: transparent;
     border: 1px solid #D0D6F9;
-}
-
-
-.tablet {
-    display: none;
 }
 
 
