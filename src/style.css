@@ -556,7 +556,7 @@ a,
 
 .navegation-tac {
     position: relative;
-    top: 9.8rem;
+    top: 8.8rem;
 }
 
 
@@ -577,8 +577,8 @@ a,
 
 .tac-line {
     position: absolute;
-    top: 4rem;
-    left: 20%;
+    top: 5rem;
+    left: 17%;
     z-index: 4;
     display: flex;
     justify-content: center;
@@ -636,7 +636,7 @@ a,
     font-weight: lighter;
     line-height: 35px;
     font-size: 1.4em;
-    margin: 2em 0 .4em 0;
+    margin: 1em 0 .4em 0;
     padding: .5em 2em;
 }
 
@@ -1029,7 +1029,7 @@ a,
 
 /*Desktops*/
 
-@media (min-width: 90em) {
+@media (min-width: 62.5em) {
 
     .nav-bar,
     .nav-bar.active {
