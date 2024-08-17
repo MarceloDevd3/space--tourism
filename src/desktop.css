@@ -1,6 +1,28 @@
 @media (min-width: 62em) {
     /*navBar*/
 
+    .bg-img-home {
+        background: url(./assets/home/background-home-desktop.jpg) no-repeat;
+        background-size: 100% 100%;
+    }
+    
+
+    .bg-img-tec {
+        background: url(./assets/technology/background-technology-desktop.jpg) no-repeat;
+        background-size: 100% 100%;
+    }
+
+
+    .bg-img-crew {
+        background: url(./assets/crew/background-crew-desktop.jpg) no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .bg-img-destination {
+        background: url(./assets/destination/background-destination-desktop.jpg) no-repeat;
+        background-size: 100% 100%;
+    }
+
     #pad-top {
         padding-top: .5em;
         padding-left: 1.3em;
@@ -271,6 +293,12 @@
         object-fit: contain;
     }
 
+    .tec--title {
+        top: 17%;
+        left:23%;
+        font-size: 1.5em;
+    }
+
 
     .tac-line {
         position: absolute;
@@ -284,9 +312,10 @@
 
     
 .tac-slider-item {
-    margin: 1.5em 1em;
-    width: 50px;
-    height: 50px;
+    margin: 1em 1em;
+    width: 75px;
+    height: 75px;
+    font-size: 1.7em;
     padding: .55em 1em;
     border-radius: 50px;
     background-color: transparent;
@@ -296,15 +325,17 @@
     
 
     .card-content-title {
-        width: 300px;
-        font-size: 1.4em;
+        width: 400px;
+        font-size: 2.2em;
+        line-height: 37px !important;
         margin: 1em  0;
-        padding: 0;
+        padding: 1em 0;
     }
 
     .card-content-text {
-        font-size: .74em;
-        line-height: 15px;
+        font-size: 1em;
+        line-height: 25px;
+        margin-top: -25px;
         margin-left: 0 !important;
         padding: 0 !important;
     }
@@ -312,14 +343,13 @@
 
     .card-content {
         position: relative;
-        left: 17%;
+        left: 23%;
         text-align: left;
         justify-content: flex-start;
-        top: 13rem;
+        top: 4.5rem;
         width: 40%;
+        height: 50vh;
         padding: 1em 2rem;
-
-        background-color: hotpink;
     }
     
     
