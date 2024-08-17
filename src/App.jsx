@@ -6,6 +6,9 @@ import Destination from './components/Destination';
 import CrewSliderPage from './components/crew/CrowSlide';
 import TecSliderPage from './components/Tec/Tecnology';
 import './style.css';
+import './mobile.css';
+import './tablet.css';
+import './desktop.css';
 function App() {
   return (
     <> 

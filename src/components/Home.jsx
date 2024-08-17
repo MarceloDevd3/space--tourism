@@ -4,7 +4,7 @@ export default function Destination() {
       <>
         <div id='Home' className='bg-img-home fullScreen  bg-img-setters'>  
           <section className='Home-space'>
-             <div>
+             <div className='inter-home-space'>
              <h1 className='space--title up--Text text-center '>So, you want to travel to
              </h1>
              <h2  className='space--sub--title up--Text text-center  '>Space</h2>

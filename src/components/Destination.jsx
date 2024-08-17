@@ -35,7 +35,7 @@ export default function DestinationPage() {
 
       <h1 className='planent--title up--Text'><span id='number-space' className='up--Text'>01</span> Pick Your Destination</h1>
       <div className='planent-line'>
-        <nav className='navegation'>
+      <nav className='navegation'>
           <ul className='nav-planents'>
             <li><a className='link-item active' href='#'>Moon</a></li>
             <li><a className='link-item' href='#'>Mars</a></li>
@@ -43,7 +43,7 @@ export default function DestinationPage() {
             <li><a className='link-item' href='#'>Titan</a></li>
           </ul>
         </nav>
-      <div className='Planents-items active'>
+        <div className='Planents-items active'>
           <PlanentsBase
             classes={"Moon Destination--planent"}
             PlanetImg={planentMoon}

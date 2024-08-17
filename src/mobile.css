@@ -1,0 +1,106 @@
+/*phone-fix*/
+
+
+@media (min-width:500px) {
+
+    /*Home*/
+    .Home-space {
+        top: 17%;
+    }
+
+    .Home-space .space--title {
+        font-size: 1.3em;
+        margin-bottom: -.5em;
+    }
+
+    .Home-space .sub--space--text {
+        font-size: 1em;
+        line-height: 24px;
+    }
+
+    /*bubble*/
+
+    .bubble-area {
+        position: relative;
+        top: -75px;
+    }
+
+    .bubble:hover::after {
+        top: 38%;
+        left: 33%;
+        width: 175px;
+        height: 175px;
+        transform: scale(1.2);
+    }
+
+    .nav-planents {
+        top: 25rem;
+    }
+    
+    
+.Destination--planent .info {
+    padding: 1em 1.7em;
+    margin: .2em 0;
+}
+
+.destinations-info>.planet {
+    top: 2%;
+    left: 5%;
+    width: 60%;
+}
+
+/*crew*/
+
+.crew--title {
+    position: relative;
+    top: 15%;
+    left: 0;
+}
+
+.member-name  {
+    padding: .1em 0;
+}
+
+.space-man {
+    max-width: 75%;
+    height: auto;
+}
+
+.btn-nav {
+    left: 0;
+    top: 50% !important;
+}
+
+.member-information {
+    font-size: .9em;
+    line-height: 20px;
+    padding: 0 1.5em ;
+}
+
+/*tecnology*/
+
+
+
+.card-content-title {
+    padding: .5em 6em;
+}
+
+.card-content {
+    position: relative;
+    top: -13rem;
+}
+
+
+.card-content-text {
+    font-size: .74em;
+    padding: .2em 5em;
+}
+
+.slide-image-item>.full {
+    height: 27vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+}

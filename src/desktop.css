@@ -1,0 +1,276 @@
+@media (min-width: 62em) {
+    /*navBar*/
+
+    #pad-top {
+        padding-top: .5em;
+        padding-left: 1.3em;
+    }
+
+    #start-logo {
+        margin-top: 1em;
+    }
+
+    .nav-bar,
+    .nav-bar.active {
+        position: absolute;
+        top: 1.5rem;
+        right: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 55%;
+        height: 75%;
+        padding-left: 12%;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 0;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(8.5px);
+        -webkit-backdrop-filter: blur(2.5px);
+        border: 1px solid rgba(255, 255, 255, 0.02);
+    }
+
+
+    .nav-item {
+        padding: .5em 1em;
+        font-size: 1em !important;
+    }
+
+    .nav-item.active::after {
+        top: 3.7rem;
+        right: 0;
+    }
+
+    .divider {
+        content: '';
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 4rem;
+        left: 6rem;
+        width: 45%;
+        z-index: 3;
+        height: 1px;
+        opacity: .5;
+        background-color: #D0D6F9;
+    }
+
+    /*home*/
+
+    .bg-img-home {
+        background: url(./assets/home/background-home-desktop.jpg) no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .text-center {
+        text-align: left;
+    }
+
+    .Home-space  {
+        position: relative;
+        top: 18rem !important;
+        padding: 0 4rem;
+    }
+
+    .Home-space .sub--space--text {
+        font-size: 1.1em;
+        width: 50%;
+    }
+
+
+    .space--title {
+        font-size: 1.5em;
+        margin-left: -17px;
+    }
+
+    .space--sub--title {
+        font-size: 7em;
+        margin-left: -5px;
+        margin-bottom: -.1rem;
+    }
+
+    .Home-space {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: 17rem;
+    }
+
+    .bubble {
+        top: -5rem;
+        left: -5rem;
+        
+        transform: scale(1.5);
+    }
+
+    .bubble-area {
+        position: relative;
+        top: 25px;
+        left: -10%;
+    }
+
+    .bubble:hover::after {
+        top: -22%;
+        left: -22.5%;
+        width: 210px;
+        height: 210px;
+        transform: scale(1.0);
+    }
+
+    /*Destination*/
+
+    .bg-img-destination {
+        background: url(./assets/destination/background-destination-desktop.jpg) no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .info {
+        position: relative;
+        top: -27rem;
+        left: 38rem;
+        width: 52%;
+    }
+
+    #Destination .planent--title {
+        position: relative;
+        top: 17.5%;
+        left: 2.1% !important;
+    }
+
+    .destination-information {
+        padding-right: 5.5rem;
+    }
+    
+
+    .Destination--planent .info {
+        padding: 7.5em 5rem;
+    }
+
+    .link-item {
+        font-size: 1.2em;
+    }
+
+    .navegation {
+        position: relative;
+        top: -5%;
+        left: 1%;
+    }
+
+    .info>.planent-name {
+        font-size: 6.5em;
+        margin-top: .7em;
+        font-weight: 200;
+    }
+
+    .destinations-info {
+        max-width: 65%;
+        width:55% ;
+    }
+
+    .destinations-info>.planet {
+        position: relative;
+        top: 5.5rem !important;
+        left: -9rem;
+        width: 65%;
+    }
+
+    .nav-planents {
+        position: absolute;
+        top: 10rem;
+        left: 12rem;
+    }
+
+    .planent--information {
+        font-size: 1.1em !important;
+    }
+
+    .planent--information::after {
+        margin: 1.4em 0;
+    }
+
+    .destination-information {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .travel-days {
+        margin-top: .7em;
+    }
+
+
+    /*Crew*/
+
+    .Slider-Item {
+        position: absolute;
+        top: 15%;
+        left: 0;
+        display: flex;
+        width: 100%;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    
+
+    .space-man {
+        display: block;
+        position: relative;
+        left: 10%;
+        max-width: 500px;
+        height: auto;
+        padding: 4em;
+    }
+
+
+    .Crew-MemberImage {
+        display: flex;
+        justify-content: center;
+        height: 75%;
+    }
+
+    .Crew-info {
+        padding: 2rem 4em;
+    }
+
+    .member-information {
+        font-size: 1em;
+        line-height: 25px;
+        width: 500px;
+        padding: 0;
+    }
+
+    .btn-nav {
+        display: flex;
+        justify-content: flex-start;
+        left: 55px;
+        top: 80.5% !important;
+    }
+
+    .btn-item-crew {
+        width: 25px;
+        height: 25px;
+        border: none;
+        border-radius: 50px;
+        background-color: #fff;
+        margin: 0 .5em;
+    }
+
+   .mobile {
+    display: none;
+   }
+
+    .desk {
+        display: block;
+    }
+
+    .slide-image-item>.full {
+        position: absolute;
+        top: -1rem;
+        right: 0;
+        width: 450px;
+        height: 70vh;
+    
+        object-fit: contain;
+    }
+
+    
+    
+}
