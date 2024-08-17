@@ -1041,10 +1041,12 @@ a,
 
 @media (min-width: 62em) {
 
+
+    /*navBar*/
+
     #pad-top {
         padding-top: .5em;
     }
-
 
     .nav-bar,
     .nav-bar.active {
@@ -1074,8 +1076,6 @@ a,
         top: 3.3rem;
         right: 0;
     }
-
-
 
     .divider {
         content: '';
