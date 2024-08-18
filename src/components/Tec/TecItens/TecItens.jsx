@@ -11,6 +11,7 @@ export default function TecItem(props) {
         <div className='card-content text-center '>
            <h2 className='card-content-title up--Text'>
 The terminology... {props.name} </h2>
+         
            <p className='card-content-text'>{props.description}</p>
         </div>
    </article>

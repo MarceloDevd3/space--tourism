@@ -1,9 +1,10 @@
 import React from 'react';
-import PlanentsBase from './DestinationPage/PlanentsBase';
-import planetEuroupe from './DestinationPage/destination/image-europa.webp';
-import planentMars from './DestinationPage/destination/image-mars.webp';
-import planentMoon from './DestinationPage/destination/image-moon.webp';
-import planentTitan from './DestinationPage/destination/image-titan.webp';
+
+import PlanentsBase from './PlanentsBase';
+import planetEuroupe from './destination/image-europa.webp';
+import planentMars from './destination/image-mars.webp';
+import planentMoon from './destination/image-moon.webp';
+import planentTitan from './destination/image-titan.webp';
 
 
 export default function DestinationPage() {

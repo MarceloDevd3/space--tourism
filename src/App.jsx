@@ -1,15 +1,16 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './Navbar';
-import Home from './components/Home';
-import Destination from './components/Destination';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import Navbar from './components/Nav/Navbar';
+import Home from './components/HomePag/Home';
+import Destination from './components/DestinationPage/Destination';
 import CrewSliderPage from './components/crew/CrowSlide';
 import TecSliderPage from './components/Tec/Tecnology';
-import './style.css';
-import './mobile.css';
-import './tablet.css';
-import './desktop.css';
-function App() {
+
+import './css/style.css';
+import './css/mobile.css';
+import './css/tablet.css';
+import './css/desktop.css';
+export default function App() {
   return (
     <> 
        <Router>
@@ -25,4 +26,3 @@ function App() {
   )
 }
 
-export default App

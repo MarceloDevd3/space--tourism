@@ -1,11 +1,13 @@
+/*notebooks*/
 @media (min-width: 62em) {
-    /*navBar*/
+
+    /*Bg-imgs*/
 
     .bg-img-home {
         background: url(./assets/home/background-home-desktop.jpg) no-repeat;
         background-size: 100% 100%;
     }
-    
+
 
     .bg-img-tec {
         background: url(./assets/technology/background-technology-desktop.jpg) no-repeat;
@@ -23,6 +25,7 @@
         background-size: 100% 100%;
     }
 
+    /*navBar*/
     #pad-top {
         padding-top: .5em;
         padding-left: 1.3em;
@@ -87,7 +90,7 @@
         text-align: left;
     }
 
-    .Home-space  {
+    .Home-space {
         position: relative;
         top: 18rem !important;
         padding: 0 4rem;
@@ -120,7 +123,7 @@
     .bubble {
         top: -5rem;
         left: -5rem;
-        
+
         transform: scale(1.5);
     }
 
@@ -147,21 +150,22 @@
 
     .info {
         position: relative;
-        top: -27rem;
+        top: -29rem;
         left: 38rem;
         width: 52%;
+        transform: scale(0.8);
     }
 
     #Destination .planent--title {
         position: relative;
         top: 17.5%;
-        left: 2.1% !important;
+        left: 7.1% !important;
     }
 
     .destination-information {
         padding-right: 5.5rem;
     }
-    
+
 
     .Destination--planent .info {
         padding: 7.5em 5rem;
@@ -185,20 +189,20 @@
 
     .destinations-info {
         max-width: 65%;
-        width:55% ;
+        width: 55%;
     }
 
     .destinations-info>.planet {
         position: relative;
         top: 5.5rem !important;
-        left: -9rem;
-        width: 65%;
+        left: -5rem;
+        width: 64%;
     }
 
     .nav-planents {
         position: absolute;
         top: 10rem;
-        left: 12rem;
+        left: 14.5rem;
     }
 
     .planent--information {
@@ -230,7 +234,7 @@
         flex-direction: row-reverse;
         justify-content: space-between;
     }
-    
+
 
     .space-man {
         display: block;
@@ -242,22 +246,42 @@
     }
 
 
+    .crew--title {
+        top: 5.5em;
+        font-size: 1.5em;
+        text-align: left;
+        padding-left: 87px;
+    }
+
+
+
     .Crew-MemberImage {
         display: flex;
         justify-content: center;
         height: 75%;
     }
 
+    .member-job {
+        font-size: 1.7em;
+    }
+
+    .member-name {
+        font-size: 3em;
+    }
+
     .Crew-info {
-        padding: 2rem 4em;
+        position: relative;
+        top: -.9em;
+        padding: 1rem 4em;
     }
 
     .member-information {
-        font-size: 1em;
+        font-size: .9em;
         line-height: 25px;
         width: 500px;
         padding: 0;
     }
+
 
     .btn-nav {
         display: flex;
@@ -267,17 +291,17 @@
     }
 
     .btn-item-crew {
-        width: 25px;
-        height: 25px;
+        width: 15px;
+        height: 15px;
         border: none;
         border-radius: 50px;
         background-color: #fff;
         margin: 0 .5em;
     }
 
-   .mobile {
-    display: none;
-   }
+    .mobile {
+        display: none;
+    }
 
     .desk {
         display: block;
@@ -289,13 +313,13 @@
         right: 0;
         width: 450px;
         height: 70vh;
-       
+
         object-fit: contain;
     }
 
     .tec--title {
         top: 17%;
-        left:23%;
+        left: 11%;
         font-size: 1.5em;
     }
 
@@ -310,36 +334,38 @@
         flex-direction: column;
     }
 
-    
-.tac-slider-item {
-    margin: 1em 1em;
-    width: 75px;
-    height: 75px;
-    font-size: 1.7em;
-    padding: .55em 1em;
-    border-radius: 50px;
-    background-color: transparent;
-    border: 1px solid #D0D6F9;
-}
 
-    
+    .tac-slider-item {
+        margin: 1em 1em;
+        width: 75px;
+        height: 75px;
+        font-size: 1.7em;
+        padding: .55em 1em;
+        border-radius: 50px;
+        background-color: transparent;
+        border: 1px solid #D0D6F9;
+    }
+
+
 
     .card-content-title {
-        width: 400px;
-        font-size: 2.2em;
-        line-height: 37px !important;
-        margin: 1em  0;
-        padding: 1em 0;
+        position: relative;
+        top: -1em;
+        width: 500px;
+        font-size: 3em;
+        line-height: 75px;
+        margin: 1em 0;
+        padding: 0;
     }
 
     .card-content-text {
-        font-size: 1em;
+        font-size: 1.2em;
         line-height: 25px;
-        margin-top: -25px;
+        margin-top: -70px;
         margin-left: 0 !important;
         padding: 0 !important;
     }
-    
+
 
     .card-content {
         position: relative;
@@ -351,6 +377,98 @@
         height: 50vh;
         padding: 1em 2rem;
     }
-    
-    
+
+
+}
+/*Large devices*/
+@media (min-width:90em) {
+
+
+    .nav-bar,
+    .nav-bar.active {
+        width: 55%;
+        padding-left: 15%;
+    }
+
+    /*Home*/
+
+    .Home-space {
+        top: 28rem !important;
+    }
+
+    .space--title {
+        font-size: 2em;
+    }
+
+    .space--sub--title {
+        font-size: 8em;
+    }
+
+    .Home-space .sub--space--text {
+        width: 47%;
+    }
+
+    /*Bubble*/
+
+
+    .bubble {
+        transform: scale(2.0);
+    }
+
+    .bubble-area {
+        top: -25px;
+    }
+
+    /*Destination*/
+
+    .destinations-info>.planet {
+        top: 10.5rem !important;
+        width: 74%;
+    }
+
+    .nav-planents {
+        top: 17rem;
+    }
+
+
+    .info {
+        top: -25rem;
+        left: 40rem;
+    }
+
+    /*Crew*/
+
+    .Slider-Item {
+        top: 14%;
+    }
+
+    .Crew-info {
+        top: -1.5em;
+        left: 5em;
+        padding: 1rem;
+    }
+
+    .btn-nav {
+        left: 90px;
+    }
+
+    .btn-item-crew {
+        margin: 0 1.2em;
+        transform: scale(1.2);
+    }
+
+    /*Tec*/
+
+
+    .slide-image-item>.full {
+        width: 500px;
+    }
+
+    .card-content {
+        left: 17%;
+        top: 10.5rem;
+    }
+
+
+
 }

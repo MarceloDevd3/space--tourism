@@ -200,6 +200,11 @@ a,
     margin-bottom: .4em;
 }
 
+
+li, a{
+    cursor: pointer;
+}
+
 /*bubble*/
 
 .bubble-area {
@@ -253,6 +258,15 @@ a,
 .bg-img-destination {
     background: url(./assets/destination/background-destination-mobile.jpg) no-repeat;
     background-size: 100% 100%;
+}
+
+
+/*ani*/
+
+@keyframes rotate  {
+     to {
+        transform: rotate(360deg);
+     }
 }
 
 
@@ -316,8 +330,8 @@ a,
     margin: 0 15.5%;
     max-width: 75%;
     width: 67%;
+    animation: rotate infinite 45s;
 }
-
 
 
 .Planents-items {
@@ -373,7 +387,6 @@ a,
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-right: 5.5rem;
 }
 
 
@@ -587,13 +600,14 @@ a,
     height: 45px;
     padding: .55em .5em;
     border-radius: 50px;
-    background-color: transparent;
+    background: transparent;
     border: 1px solid #D0D6F9;
 }
 
 
 .tac-slider-item.active {
-    background-color: #D0D6F9;
+    background: #D0D6F9;
+    animation: background ease-in 5s;
 }
 
 .tec-item.active {

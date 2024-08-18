@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
-import hamburger from '/assets/shared/icon-hamburger.svg';
-import close from '/assets/shared/icon-close.svg';
-import logo from './assets/shared/logo.svg';
+import hamburger from './shared/icon-hamburger.svg';
+import close from './shared/icon-close.svg';
+import logo from './shared/logo.svg';
 export default function Navbar() {
 
     const [menuOpen, setMenuOpen] = useState(false);
@@ -14,15 +14,13 @@ export default function Navbar() {
 
     const all = document.querySelectorAll('.nav-item');
 
-    console.log(all)
-
-
     function removeMe() {
          all.forEach(item => {
           item.classList.remove('active')
          })
     }
-    const end = all.forEach(item=> {
+  
+     all.forEach(item=> {
        item.addEventListener('click', () => {
         removeMe()
              item.classList.add('active')
@@ -37,7 +35,7 @@ export default function Navbar() {
            </div>
            <div className='divider'></div>
            <button className={menuOpen ? 'menu active' : 'menu'}  onClick={toogleMenu} >
-                <img src={hamburger} alt="menu-icon" className='menu-open' / >
+                <img src={hamburger} alt="menu-icon" className='menu-open' />
            </button>
            <ul className={menuOpen ? 'nav-bar active' : 'nav-bar'}>
            <button className='menu close'  onClick={toogleMenu}>
