@@ -5,7 +5,6 @@ import Home from './components/HomePag/Home';
 import Destination from './components/DestinationPage/Destination';
 import CrewSliderPage from './components/crew/CrowSlide';
 import TecSliderPage from './components/Tec/Tecnology';
-
 import './css/style.css';
 import './css/mobile.css';
 import './css/tablet.css';
