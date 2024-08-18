@@ -47,7 +47,7 @@ a,
 
 
 .bg-img-home {
-    background: url(./assets/home/background-home-mobile.jpg) no-repeat;
+    background: url(../assets/home/background-home-mobile.jpg) no-repeat;
     background-size: 100% 100%;
 }
 
@@ -256,7 +256,7 @@ li, a{
 
 
 .bg-img-destination {
-    background: url(./assets/destination/background-destination-mobile.jpg) no-repeat;
+    background: url(../assets/destination/background-destination-mobile.jpg) no-repeat;
     background-size: 100% 100%;
 }
 
@@ -427,7 +427,7 @@ li, a{
 /*crew*/
 
 .bg-img-crew {
-    background: url(./assets/crew/background-crew-mobile.jpg) no-repeat;
+    background: url(../assets/crew/background-crew-mobile.jpg) no-repeat;
     background-size: 100% 100%;
 }
 
@@ -561,7 +561,7 @@ li, a{
 /*Tecnology*/
 
 .bg-img-tec {
-    background: url(./assets/technology/background-technology-mobile.jpg) no-repeat;
+    background: url(../assets/technology/background-technology-mobile.jpg) no-repeat;
     background-size: 100% 100%;
 }
 
