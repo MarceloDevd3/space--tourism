@@ -714,3 +714,16 @@ li, a{
         top: 17.8rem;
     }    
 }
+
+@media (min-height: 780px) {
+    .navegation-tac {
+        top: 13.8rem;
+    }    
+}
+
+@media (min-height: 870px) {
+    .navegation-tac {
+        top: 17.8rem;
+    }    
+}
+
