@@ -708,3 +708,15 @@ li, a{
     }
     
 }
+
+@media (min-width: 440px) {
+
+   
+
+    .navegation-tac {
+        top: 14.8rem;
+    }
+
+    
+    
+}
