@@ -216,6 +216,9 @@ li, a{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
     margin: 7em auto 0 auto;
     width: 145px;
     height: 145px;
@@ -229,8 +232,8 @@ li, a{
     content: '';
     display: block;
     position: absolute;
-    top: 32%;
-    left: 17%;
+    top: -2em;
+    left: -2em;
     width: 200px;
     height: 200px;
     background-color: #D0D6F9;
@@ -289,6 +292,8 @@ li, a{
     opacity: .5;
 }
 
+
+
 .navegation {
     position: relative;
 }
@@ -297,7 +302,7 @@ li, a{
     display: flex;
     justify-content: center;
     position: relative;
-    top: 20rem;
+    top: 17rem;
     left: 0;
     z-index: 4;
 }
@@ -315,12 +320,12 @@ li, a{
 }
 
 .Destination--planent .info {
-    padding: 2.5em 1.7em;
-    margin: .5em 0;
+    padding: 0 1.7em;
+    margin:  0;
 }
 
 .destinations-info {
-    padding: 4.5em;
+    padding: 3.5em 4.5em;
 }
 
 
@@ -361,6 +366,7 @@ li, a{
 
 .info {
     margin-top: -2.2rem;
+    
 }
 
 .info>.planent-name {
@@ -577,12 +583,11 @@ li, a{
 .container {
     position: relative;
     top: 6.5rem;
-    background-color: aqua;
 }
 
 .navegation-tac {
     position: relative;
-    top: 8.8rem;
+    top: 10.8rem;
 }
 
 .tec-item {
@@ -595,16 +600,16 @@ li, a{
     word-spacing: 5px;
     font-weight: 100;
     width: 100%;
-    top: 15%;
+    top: 12%;
     left:0;
     font-size: 1.3em;
     margin: .5em 0;
 }
 
 .tac-line {
-    position: absolute;
+    position: relative;
     width: 100%;
-    top: 5rem;
+    top: 2.2rem;
     left: 0;
     margin: 0 auto;
     z-index: 4;
@@ -622,6 +627,7 @@ li, a{
     background-color: transparent;
     border: 1px solid #D0D6F9;
     cursor: pointer;
+    
 }
 
 
@@ -630,7 +636,9 @@ li, a{
 
 }
 
-.tec-item.active {
+.container .tec-item.active {
+    position: absolute;
+    top: -10rem;
     display: flex;
    animation: showTime ease-in .5s;
 }
@@ -639,6 +647,7 @@ li, a{
     position: relative;
     top: -13rem;
     padding: 1em;
+    
     
    animation: showTime ease-in .5s;
 }
@@ -649,11 +658,10 @@ li, a{
 
 .slide-image-item>.full {
     position: relative;
-    top: -15rem;
+    top: -4rem;
     width: 100%;
     margin: 1.7em 0;
     height: 25vh;
-
     object-fit: cover;
     /* Garante que a imagem preencha todo o contêiner */
     object-position: 75% 25%;
@@ -671,10 +679,32 @@ li, a{
 .card-content-text {
     font-size: .74em;
     line-height: 15px;
+    padding: 0 2em;
 }
 
 #pad-top {
     padding-top: 6.5em;
 }
 
+/*mobile 2*/
 
+@media (min-width: 428px) {
+
+    .bubble {
+        top: 2em;
+    }
+
+    .nav-planents {
+        top: 19rem;
+    }
+
+    .navegation-tac {
+        top: 12.8rem;
+    }
+
+    .card-content-title {
+        margin: 2em 0 .4em 0;
+        padding: .5em 4em;
+    }
+    
+}

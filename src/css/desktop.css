@@ -169,6 +169,9 @@
 
     .Destination--planent .info {
         padding: 7.5em 5rem;
+        
+    position: relative;
+    top: -27em;
     }
 
     .link-item {
@@ -309,11 +312,10 @@
 
     .slide-image-item>.full {
         position: absolute;
-        top: -1rem;
+        top: 7rem;
         right: 0;
         width: 450px;
         height: 70vh;
-
         object-fit: contain;
     }
 
@@ -362,6 +364,7 @@
         font-size: 1.2em;
         line-height: 25px;
         margin-top: -70px;
+        
         margin-left: 0 !important;
         padding: 0 !important;
     }
@@ -370,9 +373,9 @@
     .card-content {
         position: relative;
         left: 23%;
+        top: 15rem;
         text-align: left;
         justify-content: flex-start;
-        top: 4.5rem;
         width: 40%;
         height: 50vh;
         padding: 1em 2rem;

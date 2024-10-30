@@ -6,7 +6,7 @@ import Destination from './components/DestinationPage/Destination';
 import CrewSliderPage from './components/crew/CrowSlide';
 import TecSliderPage from './components/Tec/Tecnology';
 import './css/style.css';
-import './css/mobile.css';
+//import './css/mobile.css';
 import './css/tablet.css';
 import './css/desktop.css';
 export default function App() {
@@ -14,7 +14,7 @@ export default function App() {
     <> 
        <Router>
            <Navbar/>
-           <Routes >
+           <Routes>
                <Route exact path='/' Component={Home}></Route>
                <Route path='/Destination' Component={Destination}></Route>
                <Route path='/CrowSlide' Component={CrewSliderPage}></Route>
